@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+<center>
+
+    <p>All Products</p>
+
+    <table border="2px">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Brand</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Price</th>
+        </thead>
+        <tbody>
+            {% for x in list1 %}
+            <tr>
+                <td>{{ x.pr_id }}</td>
+                <td>{{ x.pr_name }}</td>
+                <td>{{ x.image }}</td>
+                <td>{{ x.brand }}</td>
+                <td>{{ x.category }}</td>
+                <td>{{ x.description }}</td>
+                <td>{{ x.price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</center>
+</body>
+</html>
